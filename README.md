@@ -1,6 +1,6 @@
 # resistor-color-code
 
-Some tools to read the resistor color code, still under production. It's in Spanish yet.
+Some tools to read the resistor color code, are still under production. It's in Spanish yet.
 
 Using:
 
@@ -9,7 +9,7 @@ Using:
 - Font family: [Google fonts - Baloo 2](https://fonts.google.com/specimen/Baloo+2)
 - Background image: [Lorem Picsum](https://picsum.photos)
 
-See live: [https://jhordyess.github.io/resistor-color-code/](https://jhordyess.github.io/resistor-color-code/)
+See online: [https://jhordyess.github.io/resistor-color-code/](https://jhordyess.github.io/resistor-color-code/)
 
 ---
 
