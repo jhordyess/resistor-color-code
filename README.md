@@ -11,6 +11,10 @@ Using:
 
 See online: [https://jhordyess.github.io/resistor-color-code/](https://jhordyess.github.io/resistor-color-code/)
 
+## License
+
+© 2021 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license.
+
 ---
 
-@2021 Jhordyess
+Made with 💪 by [Jhordyess](https://www.jhordyess.com/)
