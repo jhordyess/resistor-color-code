@@ -36,40 +36,45 @@ const assign = (element) => {
 
 let value, tolerance;
 const compute = () => {
-  //! try catch
-  tolerance = color_codes.tolerance;
-  value = color_codes.color1 + color_codes.color2; //! need a throw
-  value *= Math.pow(10, color_codes.multiply);
-  document.getElementById("valor").innerHTML = `${precision(
-    value
-  )} <b>&#937;</b>${
-    !document.getElementById("precision").checked
-      ? tolerance
-        ? " " + tolerance + "%"
+  try {
+    tolerance = color_codes.tolerance;
+    value = color_codes.color1 + color_codes.color2;
+    value *= Math.pow(10, color_codes.multiply);
+    document.getElementById("valor").innerHTML = `${precision(
+      value
+    )} <b>&#937;</b>${
+      !document.getElementById("precision").checked
+        ? tolerance
+          ? " " + tolerance + "%"
+          : ""
         : ""
-      : ""
-  }`;
+    }`;
+  } catch (error) {
+    window.alert("Some bug 🐞");
+  }
 };
 
 function SIa7() {
-  var k, M, G;
-  k = value / Math.pow(10, 3);
-  M = value / Math.pow(10, 6);
-  G = value / Math.pow(10, 9);
-  if (value > 0) {
-    var RG4WKA = document.getElementById("si1");
-    RG4WKA.innerHTML = k + "<b>k&#937;</b>";
-    var RG4WKB = document.getElementById("si2");
-    RG4WKB.innerHTML = M + "<b>M&#937;</b>";
-    var RG4WKC = document.getElementById("si3");
-    RG4WKC.innerHTML = G + "<b>G&#937;</b>";
-  } else {
-    var RG4WKA = document.getElementById("si1");
-    RG4WKA.innerHTML = "";
-    var RG4WKB = document.getElementById("si2");
-    RG4WKB.innerHTML = "";
-    var RG4WKC = document.getElementById("si3");
-    RG4WKC.innerHTML = "";
+  if (value && tolerance) {
+    let k, M, G;
+    k = value / Math.pow(10, 3);
+    M = value / Math.pow(10, 6);
+    G = value / Math.pow(10, 9);
+    if (value > 0) {
+      let RG4WKA = document.getElementById("si1");
+      RG4WKA.innerHTML = k + "<b>k&#937;</b>";
+      let RG4WKB = document.getElementById("si2");
+      RG4WKB.innerHTML = M + "<b>M&#937;</b>";
+      let RG4WKC = document.getElementById("si3");
+      RG4WKC.innerHTML = G + "<b>G&#937;</b>";
+    } else {
+      let RG4WKA = document.getElementById("si1");
+      RG4WKA.innerHTML = "";
+      let RG4WKB = document.getElementById("si2");
+      RG4WKB.innerHTML = "";
+      let RG4WKC = document.getElementById("si3");
+      RG4WKC.innerHTML = "";
+    }
   }
 }
 
@@ -86,7 +91,8 @@ function precision(value) {
 }
 
 const clean = () => {
-  document.getElementById("si1").innerHTML =
+  document.getElementById("valor").innerHTML =
+    document.getElementById("si1").innerHTML =
     document.getElementById("si2").innerHTML =
     document.getElementById("si3").innerHTML =
       "";
@@ -100,6 +106,7 @@ const clean = () => {
     document.getElementById("multiply").className =
     document.getElementById("tolerance").className =
       "w3-input w3-border";
+  value = tolerance = undefined;
 };
 
 const new_option = (element, selectList) => {
