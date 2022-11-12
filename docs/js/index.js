@@ -1,6 +1,6 @@
-let body = document.body,
+const body = document.body,
   html = document.documentElement;
-let height = Math.max(
+const height = Math.max(
   body.scrollHeight,
   body.offsetHeight,
   html.clientHeight,
@@ -8,14 +8,15 @@ let height = Math.max(
   html.offsetHeight
 );
 
-let width = Math.max(
+const width = Math.max(
   body.scrollWidth,
   body.offsetWidth,
   html.clientWidth,
   html.scrollWidth,
   html.offsetWidth
 );
-document.body.style.backgroundImage = `url("https://picsum.photos/${width}/${height}/?blur")`;
+
+body.style.backgroundImage = `url("https://picsum.photos/${width}/${height}/?blur")`;
 
 const color_codes = {
   color1: null,
@@ -41,7 +42,13 @@ const compute = () => {
   value *= Math.pow(10, color_codes.multiply);
   document.getElementById("valor").innerHTML = `${precision(
     value
-  )} <b>&#937;</b> ${tolerance}%`;
+  )} <b>&#937;</b>${
+    !document.getElementById("precision").checked
+      ? tolerance
+        ? " " + tolerance + "%"
+        : ""
+      : ""
+  }`;
 };
 
 function SIa7() {
@@ -72,8 +79,10 @@ function precision(value) {
     let Valorp = value * (tolerance / 100);
     let ValorA = value - Valorp;
     let ValorB = value + Valorp;
-    return `${ValorA} - ${ValorB}`;
-  } else return value;
+    return `${ValorA || ""} - ${ValorB || ""}`;
+  } else {
+    return value || "";
+  }
 }
 
 const clean = () => {

@@ -1,6 +1,6 @@
 # resistor-color-code
 
-Some tools to read the resistor color code, are still under production. It's in Spanish yet.
+Some tools to read the resistor color code, are still under production.
 
 Using:
 
@@ -13,7 +13,7 @@ See online: [https://jhordyess.github.io/resistor-color-code/](https://jhordyess
 
 ## License
 
-© 2021 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license.
+© 2022 [Jhordyess](https://github.com/jhordyess). Under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
 ---
 

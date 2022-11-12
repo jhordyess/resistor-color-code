@@ -22,3 +22,8 @@ option.green {
   background-color: green;
   color: white;
 }
+footer {
+  background-color: rgba(255, 255, 255, 0.375);
+  margin: 12px auto;
+  text-align: center;
+}
