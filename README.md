@@ -1,6 +1,6 @@
-# resistor-color-code
+# Resistor color code
 
-Some tools to read the resistor color code, are still under production.
+Some tools to read the resistor color code.
 
 Using:
 
