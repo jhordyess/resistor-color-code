@@ -1,0 +1,31 @@
+{
+  "name": "resistor-color-code",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Resistor color code calculator for 4 bands",
+  "author": "Jhordy Gavinchu <dev@jhordyess.com>",
+  "license": "MIT",
+  "keywords": [
+    "resistor-color-codes",
+    "w3css",
+    "picsum"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js .",
+    "format": "prettier --write .",
+    "predeploy": "yarn lint && yarn build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "gh-pages": "^6.0.0",
+    "material-symbols": "^0.12.0",
+    "prettier": "^3.0.3",
+    "vite": "^4.4.5",
+    "w3-css": "^4.1.0"
+  }
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/jhordyess/image/upload/v1667836186/global/favicon.svg.svg"
+      type="image/x-icon"
+    />
+    <base href="/resistor-color-code/" />
+    <title>Resistor color code</title>
+    <meta name="description" content="Resistor color code calculator for 4 bands" />
+  </head>
+  <body class="w3-display-container w3-display-topmiddle w3-mobile">
+    <main class="w3-card-4">
+      <header class="w3-container w3-blue-grey">
+        <h3>4 Band Resistor Color Code</h3>
+      </header>
+      <div class="w3-container w3-padding w3-white w3-row-padding">
+        <div class="w3-col l3 m6 s12">
+          <label>1st Digit</label>
+          <select class="w3-input w3-border" id="color1">
+            <option value="" selected class="w3-white" disabled>-</option>
+          </select>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <label>2nd Digit</label>
+          <select class="w3-input w3-border" id="color2">
+            <option value="" selected class="w3-white" disabled>-</option>
+          </select>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <label>Multiplier</label>
+          <select class="w3-input w3-border" id="multiply">
+            <option value="" selected class="w3-white" disabled>-</option>
+          </select>
+        </div>
+        <div class="w3-col l3 m6 s12">
+          <label>Tolerance</label>
+          <select class="w3-input w3-border" id="tolerance">
+            <option value="" selected class="w3-white" disabled>-</option>
+          </select>
+        </div>
+        <div class="w3-col s12 w3-margin-top w3-margin-bottom">
+          <label>
+            <input id="precision" class="w3-check" type="checkbox" />
+            Calculate tolerance
+          </label>
+          <button
+            id="clean"
+            class="w3-button w3-blue-grey w3-ripple"
+            type="reset"
+            style="display: inline-flex"
+            title="Clean"
+          >
+            <span class="material-symbols-outlined"> cleaning_services </span>
+          </button>
+          <output id="valor" class="w3-input w3-border w3-margin" style="display: inline"></output>
+          <button
+            id="si"
+            class="w3-button w3-ripple w3-blue-grey"
+            style="font-weight: bold"
+            type="button"
+            title="Calculate with SI multiplier prefixes"
+          >
+            SI
+          </button>
+          <output
+            id="si1"
+            style="background-color: white; margin: 1px; display: inline-block"
+          ></output>
+          <output
+            id="si2"
+            style="background-color: white; margin: 1px; display: inline-block"
+          ></output>
+          <output
+            id="si3"
+            style="background-color: white; margin: 1px; display: inline-block"
+          ></output>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Made with 💪 by&nbsp;
+      <a href="https://www.jhordyess.com" target="_blank">Jhordyess</a>
+      <br />
+      <a href="https://github.com/jhordyess/resistor-color-code" target="_blank">
+        👉 View on GitHub
+      </a>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

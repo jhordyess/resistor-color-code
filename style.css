@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Baloo 2', sans-serif;
+}
+
+body {
+  background-size: 100%;
+  min-height: 100vh;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+option {
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+option.red {
+  background-color: red;
+  color: white;
+}
+
+option.green {
+  background-color: green;
+  color: white;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.375);
+  margin: 12px auto;
+  text-align: center;
+  width: 100%;
+}
