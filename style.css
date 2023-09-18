@@ -38,3 +38,11 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: #333;
+}
